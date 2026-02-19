@@ -1,7 +1,0 @@
-/media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/deps/tower_service-4f30d10afe0739db.d: /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tower-service-0.3.3/src/lib.rs
-
-/media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/deps/libtower_service-4f30d10afe0739db.rlib: /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tower-service-0.3.3/src/lib.rs
-
-/media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/deps/libtower_service-4f30d10afe0739db.rmeta: /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tower-service-0.3.3/src/lib.rs
-
-/home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tower-service-0.3.3/src/lib.rs:
