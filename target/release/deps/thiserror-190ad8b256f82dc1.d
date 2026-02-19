@@ -1,0 +1,14 @@
+/media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/deps/thiserror-190ad8b256f82dc1.d: /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/build/thiserror-05ef7091ef77a085/out/private.rs
+
+/media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/deps/libthiserror-190ad8b256f82dc1.rlib: /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/build/thiserror-05ef7091ef77a085/out/private.rs
+
+/media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/deps/libthiserror-190ad8b256f82dc1.rmeta: /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs /home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs /media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/build/thiserror-05ef7091ef77a085/out/private.rs
+
+/home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs:
+/home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/aserror.rs:
+/home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/display.rs:
+/home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/var.rs:
+/home/codechap/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/private.rs:
+/media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/build/thiserror-05ef7091ef77a085/out/private.rs:
+
+# env-dep:OUT_DIR=/media/codechap/4TB/develop/mcps/mcp-server-gpt-chat/target/release/build/thiserror-05ef7091ef77a085/out
