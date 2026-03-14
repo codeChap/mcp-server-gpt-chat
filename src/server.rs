@@ -236,21 +236,11 @@ impl GptServer {
 #[tool_handler]
 impl ServerHandler for GptServer {
     fn get_info(&self) -> ServerInfo {
-        ServerInfo {
-            protocol_version: ProtocolVersion::default(),
-            capabilities: ServerCapabilities::builder().enable_tools().build(),
-            server_info: Implementation {
-                name: "gpt-chat".into(),
-                title: None,
-                version: env!("CARGO_PKG_VERSION").into(),
-                icons: None,
-                website_url: None,
-            },
-            instructions: Some(
+        ServerInfo::new(ServerCapabilities::builder().enable_tools().build())
+            .with_server_info(Implementation::new("gpt-chat", env!("CARGO_PKG_VERSION")))
+            .with_instructions(
                 "OpenAI ChatGPT MCP server. Tools: chat, chat_with_vision, \
-                 embedding, list_models."
-                    .into(),
-            ),
-        }
+                 embedding, list_models.",
+            )
     }
 }
