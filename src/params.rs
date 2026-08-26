@@ -16,10 +16,8 @@ pub struct ChatParams {
     )]
     pub messages: Option<String>,
 
-    #[schemars(
-        description = "Model to use. Defaults to gpt-4o. \
-                        Options: gpt-4o, gpt-4o-mini, gpt-4-turbo, gpt-4, gpt-3.5-turbo, o1, o1-mini"
-    )]
+    #[schemars(description = "Model to use. Defaults to gpt-4o. \
+                        Options: gpt-4o, gpt-4o-mini, gpt-4-turbo, gpt-4, gpt-3.5-turbo, o1, o1-mini")]
     pub model: Option<String>,
 
     #[schemars(description = "Sampling temperature (0.0 - 2.0)")]
@@ -47,10 +45,8 @@ pub struct VisionParams {
     #[schemars(description = "Image detail level: \"low\" or \"high\" (default: \"high\")")]
     pub detail: Option<String>,
 
-    #[schemars(
-        description = "Model to use. Defaults to gpt-4o. \
-                        Must be a vision-capable model."
-    )]
+    #[schemars(description = "Model to use. Defaults to gpt-4o. \
+                        Must be a vision-capable model.")]
     pub model: Option<String>,
 
     #[schemars(description = "Sampling temperature (0.0 - 2.0)")]

@@ -1,16 +1,13 @@
 use reqwest::Method;
 use rmcp::{
-    ErrorData as McpError, ServerHandler,
-    handler::server::tool::ToolRouter,
-    handler::server::wrapper::Parameters,
-    model::*,
-    tool, tool_handler, tool_router,
+    ErrorData as McpError, ServerHandler, handler::server::tool::ToolRouter,
+    handler::server::wrapper::Parameters, model::*, tool, tool_handler, tool_router,
 };
 use serde_json::Value;
 
 use crate::api::{
-    ChatMessage, ChatRequest, ChatResponse, EmbeddingRequest, EmbeddingResponse,
-    ModelsResponse, OpenAIClient, format_chat_response, format_embedding_response,
+    ChatMessage, ChatRequest, ChatResponse, EmbeddingRequest, EmbeddingResponse, ModelsResponse,
+    OpenAIClient, format_chat_response, format_embedding_response,
 };
 use crate::params::{ChatParams, EmbeddingParams, VisionParams};
 
@@ -54,8 +51,8 @@ impl GptServer {
         }
 
         if let Some(json) = history_json {
-            let parsed: Vec<ChatMessage> = serde_json::from_str(json)
-                .map_err(|e| format!("Invalid messages JSON: {e}"))?;
+            let parsed: Vec<ChatMessage> =
+                serde_json::from_str(json).map_err(|e| format!("Invalid messages JSON: {e}"))?;
             messages.extend(parsed);
         }
 
@@ -119,20 +116,19 @@ impl GptServer {
         }
     }
 
-    #[tool(description = "Send a chat completion request to ChatGPT. Supports multi-turn conversations, \
-                           structured output via JSON schema, and model selection.")]
+    #[tool(
+        description = "Send a chat completion request to ChatGPT. Supports multi-turn conversations, \
+                           structured output via JSON schema, and model selection."
+    )]
     async fn chat(
         &self,
         Parameters(p): Parameters<ChatParams>,
     ) -> Result<CallToolResult, McpError> {
         Self::validate_temperature(p.temperature)?;
 
-        let messages = Self::build_messages(
-            p.system_prompt.as_deref(),
-            p.messages.as_deref(),
-            &p.prompt,
-        )
-        .map_err(|e| McpError::invalid_params(e, None))?;
+        let messages =
+            Self::build_messages(p.system_prompt.as_deref(), p.messages.as_deref(), &p.prompt)
+                .map_err(|e| McpError::invalid_params(e, None))?;
 
         let req = Self::build_chat_request(
             p.model.as_deref(),
@@ -161,7 +157,11 @@ impl GptServer {
         Self::validate_temperature(p.temperature)?;
 
         let detail = p.detail.as_deref().unwrap_or("high");
-        let messages = vec![ChatMessage::user_with_image(&p.prompt, &p.image_url, detail)];
+        let messages = vec![ChatMessage::user_with_image(
+            &p.prompt,
+            &p.image_url,
+            detail,
+        )];
 
         let req = Self::build_chat_request(
             p.model.as_deref(),
